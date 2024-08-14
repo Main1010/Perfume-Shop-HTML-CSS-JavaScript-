@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mid Project</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<style>
+  .swiper-pagination-bullet-active{
+    background: var(--red);
+}
+</style>
+
+<body>
+<header>
+    <img src="images/logo.png" alt="logo" width="60px">
+    <p class="logo">main perfume shop</p>
+    <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#product">product</a>
+        <a href="#upcoming">upcoming</a>
+        <a href="#review">review</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+      <a href="#card" class="fas fa-shopping-cart"></a>
+    </div>
+</header>
+
+<section id="home" class="home">
+
+  <div class="swiper home-slider">
+
+    <div class="swiper-wrapper wrapper">
+
+      <div class="swiper-slide slide">
+
+        <div class="content">
+          <span>world famous & exclusive fermumes</span>
+          <h3>Avon Segno Eua De Parfum</h3>
+          <p>Bien que la plupart des gens considèrent les piranhas 
+            comme assez dangereux, ils sont.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="image">
+          <img src="images/homea.png" alt="homea">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+
+        <div class="content">
+          <span>most popular perfume & brands</span>
+          <h3>Wild Stone Perfume & deo</h3>
+          <p>Bien que la plupart des gens considèrent les piranhas 
+            comme assez dangereux, ils sont.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="image">
+          <img src="images/homeb.png" alt="homeb">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+
+        <div class="content">
+          <span>a fragrance that's fresh and sweet</span>
+          <h3>Hermès Mini Jardin</h3>
+          <p>Bien que la plupart des gens considèrent les piranhas 
+            comme assez dangereux, ils sont.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="image">
+          <img src="images/homec.png" alt="homec">
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+</section>
+
+<!-------product------->
+<section id="product" class="product">
+
+  <h3 class="sub-heading"> current products available </h3>
+  <h1 class="heading"> best perfumes </h1>
+  <div class="full">
+      <div class="box-container">
+
+        <div class="box">
+          <img src="images/producta.png" alt="pa">
+          <h3>Park Avenue</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$<small style="font-size: 2.5rem;" id="prod1-price">105.50</small></p>
+          <button class="btn" type="button" onclick="addToCart(1)">add to cart</button>
+        </div>
+
+        <div class="box">
+          <img src="images/productb.png" alt="pb">
+          <h3>isak</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$<small style="font-size: 2.5rem;" id="prod2-price">97.75</small></p>
+          <button class="btn" type="button" onclick="addToCart(2)">add to cart</button>
+        </div>
+
+        <div class="box">
+          <img src="images/productc.png" alt="pc">
+          <h3>fogg</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$<small style="font-size: 2.5rem;" id="prod3-price">86.25</small></p>
+          <button class="btn" type="button" onclick="addToCart(3)">add to cart</button>
+        </div>
+
+        <div class="box">
+          <img src="images/productd.png" alt="pd">
+          <h3>your logo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>$<small style="font-size: 2.5rem;" id="prod4-price">99.75</small></p>
+          <button class="btn" type="button" onclick="addToCart(4)">add to cart</button>
+        </div>
+
+        <div class="box">
+          <img src="images/producte.png" alt="pe">
+          <h3>roja</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>$<small style="font-size: 2.5rem;" id="prod5-price">83.25</small></p>
+          <button class="btn" type="button" onclick="addToCart(5)">add to cart</button>
+        </div>
+
+        <div class="box">
+          <img src="images/productf.png" alt="pf">
+          <h3>reserve global</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$<small style="font-size: 2.5rem;" id="prod6-price">72.50</small></p>
+          <button class="btn" type="button" onclick="addToCart(6)">add to cart</button>
+        </div>
+      
+      </div>
+
+      <!------------------------------------------------------->
+      <div id="card" class="card">
+        <h3>checkout <i class="fas fa-shopping-bag"></i></h3>
+        <hr>
+        <div>
+            <P for="Total Product:"><i class="fa fa-dropbox"></i> Total Product :</P>
+            <p id="total-products"></p>
+        </div>
+
+        <div>
+            <P for="Price:"><i class='fas fa-dollar-sign'></i> Price :</P>
+            <p id="price"></p>
+        </div>
+
+        <div>
+            <P class=""><i class="fas fa-shipping-fast"></i> Delivery :</P>
+            <p id="delivery"></p>
+        </div>
+        <hr class="line">
+        <div>
+            <P class="" for="Shipping::"><i class="fa fa-truck"></i> Shipping :</P>
+            <p id="shipping"></p>
+        </div>
+
+        <div>
+            <P class="" for="Total Price:"><i class='fas fa-money-bill-wave'></i> Total Price :</P>
+            <p id="total-price"></p>
+        </div>
+        <div>
+            <P class="" for="Tax:"><i class= "fas fa-money-check-alt"></i> tax :</P>
+            <p id="vat"></p>
+        </div>
+        <div>
+            <P class="" for="Total Price with Tax:"><i class='fas fa-calculator'></i> Total Price with Tax: </P>
+            <p id="tptax"></p>
+        </div>
+        <div class="prod-btn">
+            <button class="btn" type="button" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <!------------------------------------------------------->
+  </div>
+</section>
+
+<!-------upcomming product------->
+<section id="upcoming" class="upcoming">
+
+  <h3 class="sub-heading"> upcoming products </h3>
+  <h1 class="heading"> exciting perfumes </h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <img src="images/upf.png" alt="upf">
+      <h3>Lonkoom Eternal</h3>
+      <p>Face aux humains, le premier réflexe des piranhas est de fuir, pas d'attaquer.</p>
+      <span>$84.50</span>
+      <a href="#" class="btn">pre order</a>
+    </div>
+
+    <div class="box">
+      <img src="images/upa.png" alt="upa">
+      <h3>some moroccan</h3>
+      <p>Beaucoup plus de piranhas sont mangés par les gens que les gens ne sont.</p>
+      <span>$78.25</span>
+      <a href="#" class="btn">pre order</a>
+    </div>
+
+    <div class="box">
+      <img src="images/upb.png" alt="upb">
+      <h3>indora remene</h3>
+      <p>Si les poissons sont bien nourris, ils ne mordront pas les humains.</p>
+      <span>$86.75</span>
+      <a href="#" class="btn">pre order</a>
+    </div>
+
+    <div class="box">
+      <img src="images/upc.png" alt="upc">
+      <h3>rica</h3>
+      <p>Nous avons consulté ces ouvrages lors de la rédaction de ce document.</p>
+      <span>$73.75</span>
+      <a href="#" class="btn">pre order</a>
+    </div>
+
+    <div class="box">
+      <img src="images/upd.png" alt="upd">
+      <h3>yelora</h3>
+      <p>Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document.</p>
+      <span>$92.50</span>
+      <a href="#" class="btn">pre order</a>
+    </div>
+
+    <div class="box">
+      <img src="images/upe.png" alt="upe">
+      <h3>212 men</h3>
+      <p>Veuillez ne pas utiliser cette liste comme modèle pour le format de votre propre.</p>
+      <span>$97.25</span>
+      <a href="#" class="btn">pre order</a>
+    </div>
+
+  </div>
+</section>
+
+<!-------about------->
+<section class="about" id="about">
+
+  <h3 class="sub-heading"> about us </h3>
+  <h1 class="heading"> why choose our products? </h1>
+
+  <div class="row">
+    <div class="image">
+      <img src="images/about.png" alt="about">
+    </div>
+    
+    <div class="content">
+      <h3>best perfume in the world</h3>
+      <p>Nous avons consulté ces ouvrages lors de la rédaction de ce document. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. Veuillez ne pas utiliser cette liste comme modèle pour le format de votre propre liste de références, car elle peut ne pas correspondre au style de citation que vous utilisez. Si les poissons sont bien nourris, ils ne mordront pas les humains.</p>
+      <div class="icons-container">
+        <div class="icons">
+            <i class="fas fa-shipping-fast"></i>
+            <span>fast delivery</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-dollar-sign"></i>
+            <span>easy payments</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <span>easy order</span>
+        </div>
+      </div>
+      <a href="#" class="btn">learn more</a>
+    </div>
+  </div>
+</section>
+
+<!-------review------->
+<section id="review" class="review">
+
+  <h3 class="sub-heading"> customer's review </h3>
+  <h1 class="heading"> what they say </h1>
+
+  <div class="swiper-container review-slider">
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/reviewa.jpg" alt="rva">
+                <div class="user-info">
+                    <h3>vladimir putin</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+        </div>
+
+        <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/reviewb.jpg" alt="rvb">
+                <div class="user-info">
+                    <h3>cristiano ronaldo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+        </div>
+
+        <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/reviewc.jpg" alt="rvc">
+                <div class="user-info">
+                    <h3>neymar jr</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+        </div>
+
+        <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/reviewd.jpg" alt="rvd">
+                <div class="user-info">
+                    <h3>lional messi</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+        </div>
+
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+              <img src="images/reviewe.jpg" alt="rve">
+              <div class="user-info">
+                  <h3>taylor swift</h3>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+              </div>
+          </div>
+          <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+      </div>
+
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+            <img src="images/reviewf.jpg" alt="rvf">
+            <div class="user-info">
+                <h3>ed sheeran</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+      </div>
+
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+            <img src="images/reviewg.jpg" alt="rvg">
+            <div class="user-info">
+                <h3>selena gomez</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+      </div>
+
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+            <img src="images/reviewh.jpg" alt="rvh">
+            <div class="user-info">
+                <h3>ranveer kapoor</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+      </div>
+
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+            <img src="images/reviewi.jpg" alt="rvi">
+            <div class="user-info">
+                <h3>karina kapoor</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <p>Nous avons consulté ces ouvrages lors de la rédaction de. Il ne s'agit pas d'une liste exhaustive de ressources sur le sujet du document, et nous vous encourageons à faire vos propres recherches pour trouver des publications supplémentaires. </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>locations</h3>
+          <a href="#">bangladesh</a>
+          <a href="#">india</a>
+          <a href="#">russia</a>
+          <a href="#">USA</a>
+          <a href="#">england</a>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home">home</a>
+          <a href="#product">product</a>
+          <a href="#upcoming">upcoming</a>
+          <a href="#review">review</a>
+          <a href="#about">about</a>
+          <a href="#contact">contact</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <a href="#">+123-456-7890</a>
+          <a href="#">+111-222-3333</a>
+          <a href="#">midproject2022@gmail.com</a>
+          <a href="#">main5@yahoo.com</a>
+          <a href="#">chittagong, bd - 12345</a>
+      </div>
+
+      <div class="icons">
+          <h3>follow us</h3>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+      </div>
+
+  </div>
+
+  <div class="credit"> copyright @2022 by <span>main uddin</span> </div>
+
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
